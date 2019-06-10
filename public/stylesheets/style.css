@@ -1,0 +1,67 @@
+/* Styling for TAG Elements */
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.break {
+    margin-top: 8px;
+    border-bottom: 3px rgb(235, 230, 230) solid;
+}
+
+
+/* styling for posts on main screen */
+
+li {
+    list-style: none;
+    margin: auto;
+    width: 75%;
+    align-content: center
+}
+
+li div {
+    border: 2px rgb(235, 230, 230) solid;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+.add-post {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}

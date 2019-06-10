@@ -1,0 +1,34 @@
+extends layout
+include mixins/blogListItem.pug
+
+
+block content
+  h1 Andrew's Summer 2019 Rocket Blog
+  h2 This is site dedicated to documenting all the lessons, stories, and experiences gained over the summer.
+  
+  div(class='break')
+
+  div
+    h2 Posts
+    //- first blog
+    div
+    ul
+      each post in blogs
+        +blogListItem(post.title,post.content)
+  
+  div
+    //- add a post section
+    button(onclick="window.location.href= '/add-post'" class='add-post') Add a Post
+    //- //a(href="/add-post" class="add-post") Add New Post
+
+  
+
+      
+
+
+    
+    
+      
+
+
+
