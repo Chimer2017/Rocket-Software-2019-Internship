@@ -16,7 +16,7 @@ block content
       each post in blogs
         +blogListItem(post.title,post.content)
   
-  div
+  div(id='button-container')
     //- add a post section
     button(onclick="window.location.href= '/add-post'" class='add-post') Add a Post
     //- //a(href="/add-post" class="add-post") Add New Post

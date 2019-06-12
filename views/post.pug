@@ -1,13 +1,15 @@
 extend layout
 
 block content
-    form(method='POST' action='/add-post')
-        div
-            label(for='title') Title:
-            input#name(type='text', placeholder='Blog Title' name='title')
-        div
-            label(for='content') Content:
-            input#name(type='text', placeholder='Blog Content' name='content')
-        div 
-            button(type="submit") Add Post
+    div(id='new-pst-frm')
+        form(method='POST' action='/add-post' class='frm')
+            div(class='frm-container')
+                div
+                    label(for='title') Title:
+                    input#name(type='text', placeholder='Blog Title' name='title')
+                div
+                    label(for='content') Content:
+                    input#name(type='text-area', placeholder='Blog Content' name='content')
+                div 
+                    button(type="submit" class='add-post btn-submit') Add Post
             

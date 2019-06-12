@@ -34,7 +34,7 @@ li {
     list-style: none;
     margin: auto;
     width: 75%;
-    align-content: center
+    /* align-content: center */
 }
 
 li div {
@@ -48,15 +48,16 @@ li div {
 
 .add-post {
     border: none;
-    font-family: inherit;
-    font-size: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
     color: inherit;
-    background: none;
+    background: rgb(235, 230, 230);
     cursor: pointer;
-    padding: 25px 80px;
+    padding: 5px 5px;
     display: inline-block;
-    margin: 15px 30px;
+    margin: auto;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1px;
     font-weight: 700;
     outline: none;
@@ -64,4 +65,62 @@ li div {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#button-container {
+    margin: auto;
+    width: 100px;
+}
+
+
+/* styling for the form */
+
+#new-pst-frm {
+    display: block;
+    text-align: center;
+}
+
+.frm {
+    margin: 0 auto;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: inherit;
+    background: rgb(235, 230, 230);
+    cursor: pointer;
+    padding: 5px 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    border-radius: 8px;
+}
+
+.frm-container {
+    display: block;
+    text-align: center;
+}
+
+.frm input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.frm label {
+    padding-left: 6px;
+}
+
+.btn-submit {
+    border: 1px black solid;
+    font-weight: 600;
+    border-radius: 6px;
 }

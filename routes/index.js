@@ -1,7 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var bodyParser = require('body-parser');
+var xprsVal = require('express-validator');
 var path = require('path');
 const app = express();
+var validator = require('validator');
+
 
 var blogs = [{
         title: "My-First-Week",
@@ -51,5 +55,6 @@ router.post('/add-post', function(req, res) {
 });
 
 
-
+app.use(bodyParser.json);
+app.use(xprsVal());
 module.exports = router;
